@@ -1,0 +1,189 @@
+---
+title: "Data literacy"
+subtitle: "introduction à une approche critique de la donnée"
+author: "Sylvain Lapoix - Datactivist"
+date: "PIJ Saint-Etienne - 10/03/2020"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+params:
+  event: CRIJ Dataliteracy
+  slug: crij_ara_dataliteracy
+---
+
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></center></span></div>")` 
+
+
+---
+
+class: center, middle
+
+Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
+
+Sources : `r paste0("https://github.com/datactivist/", params$slug)`
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+
+
+---
+
+background-image: url("https://media.giphy.com/media/h1usHXc3P8XD5fVjB0/giphy.gif")
+class: center, top, inverse
+
+# I .Données partout, justif nulle part ...
+
+
+---
+
+### des données produites tout le temps
+
+---
+
+### des données utilisées dans tous les sens
+
+---
+
+### mais c'est quoi en fait une donnée ?
+
+---
+
+### comment passe-t-on de la donnée à l'information, la sagesse ... ou la décision ?
+
+---
+
+### notre paralysie face à la donnée est un construit social
+
+---
+
+### leur compréhension devient un enjeu démocratique
+
+
+
+---
+
+background-image: url("https://media.giphy.com/media/Vtk2HG3rtGeNa/giphy.gif")
+class: center, inverse
+
+# II. Unité de démesure
+
+
+
+---
+
+### collecter des données, pour faire quoi ?
+
+
+
+---
+
+### comment sait-on où je suis? La géoloc
+
+
+---
+
+### des choix, des coûts et des méthodes
+
+
+---
+
+### comment se créent les indicateurs ?
+
+
+---
+
+### quand l'indicateur se mue en objectif (la loi de Goodhart)
+
+
+---
+
+### les algos : tout est écrit (par quelqu'un d'autre)
+
+
+
+---
+
+background-image: url("https://media.giphy.com/media/vt7XXolOLWeI/giphy.gif")
+class: center, top, inverse
+
+# III. Quis custodiet ipsos custodies ?*
+
+.footnote[* "Mais qui gardera ces gardiens ?", attribué à Juvénal]
+
+---
+
+### statactivism
+
+
+
+---
+
+### Giorgia Lupi et le data humanism
+
+
+---
+
+### collecte citoyenne
+
+---
+
+### communs numériques
+
+---
+
+### open data
+
+---
+
+### transparence des algorithmes
+
+---
+
+class: inverse, center, middle
+
+# Merci !
+
+
+Contact : [sylvain@datactivist.coop](mailto:sylvain@datactivist.coop)
