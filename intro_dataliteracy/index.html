@@ -15,7 +15,6 @@ class: center, middle, inverse, title-slide
 # Data literacy
 ## introduction à une approche critique de la donnée
 ### Sylvain Lapoix - Datactivist
-### PIJ Saint-Etienne - 10/03/2020
 
 ---
 
@@ -51,9 +50,9 @@ layout: true
 
 class: center, middle
 
-Ces slides en ligne : http://datactivist.coop/crij_ara_dataliteracy
+Ces slides en ligne : http://datactivist.coop/crij_aura_dataliteracy
 
-Sources : https://github.com/datactivist/crij_ara_dataliteracy
+Sources : https://github.com/datactivist/crij_aura_dataliteracy
 
 
 Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
@@ -216,6 +215,45 @@ La professeure en sciences l'éducation de l'université de Stanford [Jo Boaler]
 
 ---
 
+
+### Quand Excel a crashé le NHS (UK)
+
+#### [Covid: how Excel may have caused loss of 16,000 test results in England](https://www.theguardian.com/politics/2020/oct/05/how-excel-may-have-caused-loss-of-16000-covid-tests-in-england), The Guardian, 06/10/2020
+
+![](./img/excel_covid_uga.png)
+
+---
+
+### Du bug informatique au bug sanitaire
+
+La cause :
+
+&gt; *In this case, the Guardian understands, one lab had sent its daily test report to PHE in the form of a CSV file – the simplest possible database format, just a list of values separated by commas. That report was then loaded into Microsoft Excel, and the new tests at the bottom were added to the main database. But while CSV files can be any size, Microsoft Excel files can only be 1,048,576 rows long [...] **When a CSV file longer than that is opened, the bottom rows get cut off and are no longer displayed**. That means that, once the lab had performed more than a million tests, it was only a matter of time before its reports failed to be read by PHE.*
+
+La conséquence :
+
+&gt; *The data error, which led to 15,841 positive tests being left off the official daily figures, means than 50,000 potentially infectious people may have been missed by contact tracers and not told to self-isolate.*
+
+---
+
+### Emoubteillages de test à l'ARS (France)
+
+Le problème ne se cantonne pas au Royaume-Uni.
+
+Le 6 novembre, l'ARS révélait qu'un *"embouteillage"* avait empêché de prendre en compte plusieurs centaines de milliers de tests Covid (voir [Le Parisien, 06/11/2020](https://www.leparisien.fr/societe/covid-19-des-indicateurs-de-tests-sous-evalues-a-cause-de-bugs-dans-la-remontee-des-donnees-06-11-2020-8406911.php), ci-dessous).
+
+.pull-left[
+![](./img/ars_bug.png)
+]
+
+.pull-right[Ces retards dans la remontée de résultat ont provoqué une mauvaise évaluation du taux de positivité.
+
+Dans les deux cas, **des considérations techniques ont faussé l'évaluation d'un phénomène, entraînant des conséquences concrètes dans le débat public et la politique sanitaire**.]
+
+
+
+---
+
 background-image: url("https://media.giphy.com/media/Vtk2HG3rtGeNa/giphy.gif")
 class: center, inverse
 
@@ -296,17 +334,20 @@ En transformant ainsi des outils descriptifs en outils prescriptifs, la producti
 
 ### La géoloc : donnée de base
 
+.pull-left[
+![](./img/mobile_signal_tracking.gif)
 La géolocalisation est une donnée essentielle à l'acheminement du signal vers les usager·ère·s des réseaux mobiles. Elle repose sur la triangulation du signal téléphonique par les tours relais.
 
-.center[
-![](./img/mobile_signal_tracking.gif)
+.footnote[\* Source infographie : [BBC](http://news.bbc.co.uk/2/hi/technology/4738219.stm).]
 ]
 
 --
 
+.pull-right[
 Or, cette donnée "nécessaire" permet de collecter des informations extrêmement précises sur les individus. Informations dont la confidentialité peut être mise à mal, que ce soit par des organisations privées ou publiques (voir [*The problem with mobile phone*, Electronic Frontier Foundation, 2018](https://ssd.eff.org/en/module/problem-mobile-phones)).
+]
 
-.footnote[\* Source infographie : [BBC](http://news.bbc.co.uk/2/hi/technology/4738219.stm).]
+
 
 ---
 
@@ -323,7 +364,7 @@ Rien à cacher, vraiment ?
 
 ---
 
-### Les algos : tout est écrit (par quelqu'un d'autre)
+### Les algos : tout est écrit&lt;br&gt;(par quelqu'un d'autre)
 
 Idéalisés comme outils objectifs, les algorithmes héritent de nombreux biais :
 * les personnes qui commandent leur fabrication ;
@@ -365,6 +406,8 @@ class: inverse
 
 ![](./img/deardata_complains.jpeg)
 
+.footnote[Pour en savoir plus, voir notre présentation sur le sujet à l'[Infolab Grand Poitiers](https://datactivist.coop/infolab_poitiers/datapero_datahumanism/#1).]
+
 ---
 
 ### La collecte citoyenne
@@ -384,29 +427,39 @@ En 2018,le secrétaire d'Etat chargé du logement, Julien Denormandie, avait dé
 
 ---
 
-### communs numériques
+### Communs numériques
 
 .pull-left[
 #### Open street map
 
+Voir les donnée sur [la patinoire du Polygone de Valence](https://www.openstreetmap.org/way/72587650#map=19/44.93652/4.90348).
 
+![](./img/osm_patinoire_polygone.png)
 ]
 
 .pull-right[
-#### Wikipedia
+#### Open Food Facts
+
+Avec le [pot de Nutella de 400 grammes](https://fr.openfoodfacts.org/produit/3017620422003/nutella-ferrero) (couvercle compris !).
+
+![](./img/off_nutella.png)
 ]
 
 ---
 
 ### L'open data
 
+Source : [Le Monde](https://www.lemonde.fr/planete/article/2021/03/06/covid-19-l-enjeu-crucial-des-donnees-publiques_6072158_3244.html).
 
+![](./img/opendata_covid.png)
 
 ---
 
 ### Transparence des algorithmes
 
+![](./img/algo_valenceromans.png)
 
+Source : [La Gazette des Communes](https://www.lagazettedescommunes.com/691390/a-valence-romans-des-places-en-creche-attribuees-par-un-algorithme/?abo=1).
 
 ---
 
